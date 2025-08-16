@@ -1,0 +1,156 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fffaf2;
+}
+
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(220, 214, 30,1); /* dark overlay for text readability */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+}
+
+/* ✅ Sections */
+section {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #c8e6c9;
+  margin: 1.5rem 0;
+}
+
+/* ✅ About Paragraphs */
+.about p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* ✅ Gallery */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.image-item {
+  width: 300px;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+/* ✅ Services List */
+.services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.services li::before {
+  content: '✔️ ';
+  color: #4caf50;
+}
+
+/* ✅ Contact Info */
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ✅ Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f1f8e9;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* ✅ WhatsApp Sticky Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebd5a;
+}
+
+.whatsapp-float img {
+  width: 24px;
+  height: 24px;
+}

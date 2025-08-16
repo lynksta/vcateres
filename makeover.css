@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  color: #444;
+}
+
+/* ✅ Hero Video Section with Curve */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end; /* 👈 Push content to bottom */
+  justify-content: center;
+  clip-path: ellipse(100% 100% at 50% 85%);
+  padding-bottom: 80px; /* 👈 Optional spacing from bottom */
+}
+
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -70px; /* 👈 This makes it visibly hang below the hero */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #eb61b4); /* 🌈 Gradient pinks */
+  padding: 40px 60px;
+  text-align: center;
+  border-radius: 20px;
+  color: #fff;
+  backdrop-filter: blur(6px);
+
+  max-width: 90%;
+  width: 600px;
+
+  box-shadow:
+    0 10px 30px rgba(255, 105, 180, 0.3), /* Outer pink glow */
+    0 0 20px rgba(255, 182, 193, 0.5);    /* Soft inner glow */
+  
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Elegant border */
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+/* Section Defaults */
+section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+/* About */
+.about p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Gallery */
+.gallery .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 450px;
+  object-fit:cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Services List */
+.services ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.services li {
+  background: #ffe3ec;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #d63384;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+/* Contact */
+.contact p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.contact-info {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+  background: #d63384;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+/* ✅ WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.3s;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebd5a;
+  transform: scale(1.05);
+}
+
